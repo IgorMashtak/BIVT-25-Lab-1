@@ -8,6 +8,8 @@
 
             // code here
 
+            answer = d > 0;
+
             // end
 
             return answer;
@@ -17,6 +19,8 @@
             bool answer = false;
 
             // code here
+
+            answer = n % 2 == 0;
 
             // end
 
@@ -28,6 +32,8 @@
 
             // code here
 
+            answer = Math.Max(a, b);
+
             // end
 
             return answer;
@@ -37,6 +43,15 @@
             double answer = 0;
 
             // code here
+
+            if (Math.Abs(d) > Math.Abs(f))
+            {
+                answer = f;
+            }
+            else
+            {
+                answer = d;
+            }
 
             // end
 
@@ -48,6 +63,15 @@
 
             // code here
 
+            if (Math.Abs(x) > 1)
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = x;
+            }
+
             // end
 
             return answer;
@@ -57,6 +81,10 @@
             bool answer = false;
 
             // code here
+
+            double deviation = Math.Abs(x * x + y * y - r * r);
+            double eps = 1e-6;
+            answer = deviation <= eps;
 
             // end
 
@@ -69,6 +97,12 @@
 
             // code here
 
+            int s = n * n;
+            if (s - n > n && n % 2 == 0)
+            {
+                answer = true;
+            }
+
             // end
 
             return answer;
@@ -78,6 +112,11 @@
             bool answer = false;
 
             // code here
+            
+            if (L <= 10 * 3 && T + M >= 5 && M % 2 == 0)
+            {
+                answer = true;
+            }
 
             // end
 
