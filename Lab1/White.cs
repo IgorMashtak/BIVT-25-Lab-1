@@ -82,9 +82,14 @@
 
             // code here
 
-            double deviation = Math.Abs(x * x + y * y - r * r);
+            /*
+            double deviation = Math.Round(Math.Abs(x * x + y * y - r * r), 8);
             double eps = 1e-6;
             answer = deviation <= eps;
+            */
+
+            // ! тест x = 3, y = 0.01, r = 3 -> deviation получается 0.0001 > 1e-6, 
+            // но ожидаемый ответ - true
 
             // end
 
@@ -112,7 +117,7 @@
             bool answer = false;
 
             // code here
-            
+
             if (L <= 10 * 3 && T + M >= 5 && M % 2 == 0)
             {
                 answer = true;
