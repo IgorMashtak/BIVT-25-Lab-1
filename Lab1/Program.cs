@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Numerics;
 
 namespace Lab1
@@ -7,6 +7,22 @@ namespace Lab1
     {
         public static void Main()
         {
+            /*
+            White white = new White();
+            Console.WriteLine("\n#1");
+            Console.WriteLine(white.Task1(1.2));
+            Console.WriteLine(white.Task1(-3.2));
+            Console.WriteLine("\n#2");
+            Console.WriteLine(white.Task2(2));
+            Console.WriteLine("\n#3");
+            Console.WriteLine(white.Task3(2, 1));
+            Console.WriteLine(white.Task4(-2.5, 1.89));
+            Console.WriteLine(white.Task5(0.5));
+            Console.WriteLine(white.Task6(2.5, 1.89, 3));
+            Console.WriteLine("\n#7");
+            Console.WriteLine(white.Task7(2));
+            */
+
             /**/
             Blue blue = new Blue();
             Console.WriteLine("Blue");
@@ -77,35 +93,6 @@ namespace Lab1
             Console.WriteLine(blue.Task8(0, 0, 0));
 
             White white = new White();
-            Console.WriteLine("\nWhite");
-            Console.WriteLine("\n#4");
-            Console.WriteLine(white.Task4(1.5, 1.5));
-            Console.WriteLine(white.Task4(1.5, -1.5));
-            Console.WriteLine(white.Task4(-1.5, 1.5));
-            Console.WriteLine(white.Task4(-1.5, -1.5));
-            /*
-            Console.WriteLine("\n#6");
-            var input = new double[,] {
-                { 0, 1.5, 1, 1, -1, 3, -1, -2.3, 2, 1 },
-                { 0, 2.3, -1, -1, 1, 0.01, 1.23, -3.2, 1, 0 },
-                { 0, 1, 1, 0.5, 1.5, 3, 2, 2.5, 1, 1 }
-            };
-            var answer = new bool[] { true, false, false, false, false, true, false, false, false, true };
-
-            for (int i = 0; i < 10; ++i)
-            {
-                bool my_ans = white.Task6(input[0, i], input[1, i], input[2, i]);
-                if (my_ans == answer[i])
-                {
-                    Console.WriteLine("+");
-                }
-                else
-                {
-                    white.Task6(input[0, i], input[1, i], input[2, i]);
-                    Console.WriteLine("-");
-                }
-            }
-            */
 
         }
     }
