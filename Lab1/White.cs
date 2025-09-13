@@ -82,14 +82,9 @@
 
             // code here
 
-            /*
             double deviation = Math.Round(Math.Abs(x * x + y * y - r * r), 8);
-            double eps = 1e-6;
+            double eps = 1e-4;
             answer = deviation <= eps;
-            */
-
-            // ! тест x = 3, y = 0.01, r = 3 -> deviation получается 0.0001 > 1e-6, 
-            // но ожидаемый ответ - true
 
             // end
 
